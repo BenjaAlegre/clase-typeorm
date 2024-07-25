@@ -2,7 +2,9 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { LenguajeService } from './lenguaje.service';
 import { CreateLenguajeDto } from './dto/create-lenguaje.dto';
 import { UpdateLenguajeDto } from './dto/update-lenguaje.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('Lenguaje')
 @Controller('lenguaje')
 export class LenguajeController {
   constructor(private readonly lenguajeService: LenguajeService) {}

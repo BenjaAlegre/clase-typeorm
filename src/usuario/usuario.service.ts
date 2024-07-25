@@ -33,6 +33,6 @@ export class UsuarioService {
   }
 
   remove(id: number) {
-    return this.usuarioRepository.delete({ id: id });
+    return this.usuarioRepository.softDelete({ id: id });
   }
 }

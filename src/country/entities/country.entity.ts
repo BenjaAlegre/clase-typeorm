@@ -1,7 +1,7 @@
 import { Column, CreateDateColumn, DeleteDateColumn, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity('tipo_usuario')
-export class TipoUsuario {
+@Entity()
+export class Country {
   @PrimaryGeneratedColumn('increment')
   id: number;
 

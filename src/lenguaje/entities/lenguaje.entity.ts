@@ -1,5 +1,7 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { ApiTags } from '@nestjs/swagger';
+import { Column, CreateDateColumn, DeleteDateColumn, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
+@ApiTags('Lenguaje')
 @Entity('lenguaje')
 export class Lenguaje {
   @PrimaryGeneratedColumn('increment')
@@ -7,4 +9,9 @@ export class Lenguaje {
 
   @Column('text')
   descripcion: string;
+
+  @DeleteDateColumn()
+  timeDeleted: Date;
+  @CreateDateColumn()
+  timeCreated: Date;
 }

@@ -1,7 +1,9 @@
+import { ApiTags } from '@nestjs/swagger';
 import { Column, CreateDateColumn, DeleteDateColumn, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity('tipo_usuario')
-export class TipoUsuario {
+@ApiTags('modelo')
+@Entity('modelo')
+export class Modelo {
   @PrimaryGeneratedColumn('increment')
   id: number;
 

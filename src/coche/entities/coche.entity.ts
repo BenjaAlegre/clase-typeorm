@@ -1,16 +1,18 @@
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, CreateDateColumn, DeleteDateColumn, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { Usuario } from '../../usuario/entities/usuario.entity';
+import { Marca } from '../../marca/entities/marca.entity';
+import { Modelo } from '../../modelo/entities/modelo.entity';
 
 @Entity('coche')
 export class Coche {
   @PrimaryGeneratedColumn('increment')
   id: number;
 
-  @Column('text')
-  modelo: string;
+  @ManyToOne(() => Modelo, (modelo) => modelo.id)
+  modelo: Modelo;
 
-  @Column('text')
-  marca: string;
+  @ManyToOne(() => Marca, (marca) => marca.id)
+  marca: Marca;
 
   @Column('text')
   color: string;
@@ -20,4 +22,8 @@ export class Coche {
 
   @ManyToOne(() => Usuario)
   usuario: Usuario;
+  @DeleteDateColumn()
+  timeDeleted: Date;
+  @CreateDateColumn()
+  timeCreated: Date;
 }

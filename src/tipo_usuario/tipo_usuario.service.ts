@@ -31,6 +31,6 @@ export class TipoUsuarioService {
   }
 
   remove(id: number) {
-    return this.tipoUsuarioRepository.delete({ id: id });
+    return this.tipoUsuarioRepository.softDelete({ id: id });
   }
 }

@@ -2,8 +2,8 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { CreateLenguajeDto } from './dto/create-lenguaje.dto';
-import { Lenguaje } from './entities/lenguaje.entity';
 import { UpdateLenguajeDto } from './dto/update-lenguaje.dto';
+import { Lenguaje } from './entities/lenguaje.entity';
 
 @Injectable()
 export class LenguajeService {
@@ -31,6 +31,6 @@ export class LenguajeService {
   }
 
   remove(id: number) {
-    return this.lenguajeRepository.delete({ id: id });
+    return this.lenguajeRepository.softDelete({ id: id });
   }
 }

@@ -31,6 +31,6 @@ export class CocheService {
   }
 
   remove(id: number) {
-    return this.cocheRepository.delete({ id: id });
+    return this.cocheRepository.softDelete({ id: id });
   }
 }

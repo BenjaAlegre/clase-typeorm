@@ -1,0 +1,1113 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/ubicacion": {
+      "post": {
+        "operationId": "UbicacionController_create",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateUbicacionDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Ubicacion"
+        ]
+      },
+      "get": {
+        "operationId": "UbicacionController_findAll",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Ubicacion"
+        ]
+      }
+    },
+    "/ubicacion/{id}": {
+      "get": {
+        "operationId": "UbicacionController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Ubicacion"
+        ]
+      },
+      "patch": {
+        "operationId": "UbicacionController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUbicacionDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Ubicacion"
+        ]
+      },
+      "delete": {
+        "operationId": "UbicacionController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Ubicacion"
+        ]
+      }
+    },
+    "/tipo-usuario": {
+      "post": {
+        "operationId": "TipoUsuarioController_create",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTipoUsuarioDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Tipo-Usuario"
+        ]
+      },
+      "get": {
+        "operationId": "TipoUsuarioController_findAll",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Tipo-Usuario"
+        ]
+      }
+    },
+    "/tipo-usuario/{id}": {
+      "get": {
+        "operationId": "TipoUsuarioController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Tipo-Usuario"
+        ]
+      },
+      "patch": {
+        "operationId": "TipoUsuarioController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTipoUsuarioDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Tipo-Usuario"
+        ]
+      },
+      "delete": {
+        "operationId": "TipoUsuarioController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Tipo-Usuario"
+        ]
+      }
+    },
+    "/lenguaje": {
+      "post": {
+        "operationId": "LenguajeController_create",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLenguajeDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Lenguaje"
+        ]
+      },
+      "get": {
+        "operationId": "LenguajeController_findAll",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Lenguaje"
+        ]
+      }
+    },
+    "/lenguaje/{id}": {
+      "get": {
+        "operationId": "LenguajeController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Lenguaje"
+        ]
+      },
+      "patch": {
+        "operationId": "LenguajeController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLenguajeDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Lenguaje"
+        ]
+      },
+      "delete": {
+        "operationId": "LenguajeController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Lenguaje"
+        ]
+      }
+    },
+    "/usuario": {
+      "post": {
+        "operationId": "UsuarioController_create",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateUsuarioDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Usuario"
+        ]
+      },
+      "get": {
+        "operationId": "UsuarioController_findAll",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Usuario"
+        ]
+      }
+    },
+    "/usuario/{id}": {
+      "get": {
+        "operationId": "UsuarioController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Usuario"
+        ]
+      },
+      "patch": {
+        "operationId": "UsuarioController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUsuarioDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Usuario"
+        ]
+      },
+      "delete": {
+        "operationId": "UsuarioController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Usuario"
+        ]
+      }
+    },
+    "/coche": {
+      "post": {
+        "operationId": "CocheController_create",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCocheDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Coche"
+        ]
+      },
+      "get": {
+        "operationId": "CocheController_findAll",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Coche"
+        ]
+      }
+    },
+    "/coche/{id}": {
+      "get": {
+        "operationId": "CocheController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Coche"
+        ]
+      },
+      "patch": {
+        "operationId": "CocheController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCocheDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Coche"
+        ]
+      },
+      "delete": {
+        "operationId": "CocheController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Coche"
+        ]
+      }
+    },
+    "/country": {
+      "post": {
+        "operationId": "CountryController_create",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCountryDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Pais"
+        ]
+      },
+      "get": {
+        "operationId": "CountryController_findAll",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Pais"
+        ]
+      }
+    },
+    "/country/{id}": {
+      "get": {
+        "operationId": "CountryController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Pais"
+        ]
+      },
+      "patch": {
+        "operationId": "CountryController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCountryDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Pais"
+        ]
+      },
+      "delete": {
+        "operationId": "CountryController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Pais"
+        ]
+      }
+    },
+    "/marca": {
+      "post": {
+        "operationId": "MarcaController_create",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateMarcaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Marca"
+        ]
+      },
+      "get": {
+        "operationId": "MarcaController_findAll",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Marca"
+        ]
+      }
+    },
+    "/marca/{id}": {
+      "get": {
+        "operationId": "MarcaController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Marca"
+        ]
+      },
+      "patch": {
+        "operationId": "MarcaController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateMarcaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Marca"
+        ]
+      },
+      "delete": {
+        "operationId": "MarcaController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Marca"
+        ]
+      }
+    },
+    "/modelo": {
+      "post": {
+        "operationId": "ModeloController_create",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateModeloDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Modelo"
+        ]
+      },
+      "get": {
+        "operationId": "ModeloController_findAll",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Modelo"
+        ]
+      }
+    },
+    "/modelo/{id}": {
+      "get": {
+        "operationId": "ModeloController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Modelo"
+        ]
+      },
+      "patch": {
+        "operationId": "ModeloController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateModeloDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Modelo"
+        ]
+      },
+      "delete": {
+        "operationId": "ModeloController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Modelo"
+        ]
+      }
+    }
+  },
+  "info": {
+    "title": "Clase TypeORM",
+    "description": "Endpoints sobre el excel",
+    "version": "1.0.0",
+    "contact": {}
+  },
+  "tags": [],
+  "servers": [],
+  "components": {
+    "schemas": {
+      "Country": {
+        "type": "object",
+        "properties": {}
+      },
+      "CreateUbicacionDto": {
+        "type": "object",
+        "properties": {
+          "direccion": {
+            "type": "string"
+          },
+          "localidad": {
+            "type": "string"
+          },
+          "provincia": {
+            "type": "string"
+          },
+          "pais": {
+            "$ref": "#/components/schemas/Country"
+          }
+        },
+        "required": [
+          "direccion",
+          "localidad",
+          "provincia",
+          "pais"
+        ]
+      },
+      "UpdateUbicacionDto": {
+        "type": "object",
+        "properties": {}
+      },
+      "CreateTipoUsuarioDto": {
+        "type": "object",
+        "properties": {
+          "descripcion": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "descripcion"
+        ]
+      },
+      "UpdateTipoUsuarioDto": {
+        "type": "object",
+        "properties": {}
+      },
+      "CreateLenguajeDto": {
+        "type": "object",
+        "properties": {
+          "descripcion": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "descripcion"
+        ]
+      },
+      "UpdateLenguajeDto": {
+        "type": "object",
+        "properties": {}
+      },
+      "Ubicacion": {
+        "type": "object",
+        "properties": {}
+      },
+      "TipoUsuario": {
+        "type": "object",
+        "properties": {}
+      },
+      "Lenguaje": {
+        "type": "object",
+        "properties": {}
+      },
+      "CreateUsuarioDto": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          },
+          "apellido": {
+            "type": "string"
+          },
+          "dni": {
+            "type": "number"
+          },
+          "ubicacion": {
+            "$ref": "#/components/schemas/Ubicacion"
+          },
+          "tipo_usuario": {
+            "$ref": "#/components/schemas/TipoUsuario"
+          },
+          "lenguaje": {
+            "$ref": "#/components/schemas/Lenguaje"
+          }
+        },
+        "required": [
+          "nombre",
+          "apellido",
+          "dni",
+          "ubicacion",
+          "tipo_usuario",
+          "lenguaje"
+        ]
+      },
+      "UpdateUsuarioDto": {
+        "type": "object",
+        "properties": {}
+      },
+      "Modelo": {
+        "type": "object",
+        "properties": {}
+      },
+      "Marca": {
+        "type": "object",
+        "properties": {}
+      },
+      "Usuario": {
+        "type": "object",
+        "properties": {}
+      },
+      "CreateCocheDto": {
+        "type": "object",
+        "properties": {
+          "modelo": {
+            "$ref": "#/components/schemas/Modelo"
+          },
+          "marca": {
+            "$ref": "#/components/schemas/Marca"
+          },
+          "color": {
+            "type": "string"
+          },
+          "patente": {
+            "type": "string"
+          },
+          "usuario": {
+            "$ref": "#/components/schemas/Usuario"
+          }
+        },
+        "required": [
+          "modelo",
+          "marca",
+          "color",
+          "patente",
+          "usuario"
+        ]
+      },
+      "UpdateCocheDto": {
+        "type": "object",
+        "properties": {}
+      },
+      "CreateCountryDto": {
+        "type": "object",
+        "properties": {
+          "descripcion": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "descripcion"
+        ]
+      },
+      "UpdateCountryDto": {
+        "type": "object",
+        "properties": {
+          "descripcion": {
+            "type": "string"
+          }
+        }
+      },
+      "CreateMarcaDto": {
+        "type": "object",
+        "properties": {
+          "descripcion": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "descripcion"
+        ]
+      },
+      "UpdateMarcaDto": {
+        "type": "object",
+        "properties": {
+          "descripcion": {
+            "type": "string"
+          }
+        }
+      },
+      "CreateModeloDto": {
+        "type": "object",
+        "properties": {
+          "descripcion": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "descripcion"
+        ]
+      },
+      "UpdateModeloDto": {
+        "type": "object",
+        "properties": {
+          "descripcion": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

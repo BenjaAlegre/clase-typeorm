@@ -17,7 +17,9 @@ export class UbicacionService {
   }
 
   findAll() {
-    return this.ubicacionRepository.find();
+    return this.ubicacionRepository.find({
+      relations: { pais: true },
+    });
   }
 
   findOne(id: number) {
@@ -31,6 +33,6 @@ export class UbicacionService {
   }
 
   remove(id: number) {
-    return this.ubicacionRepository.delete({ id: id });
+    return this.ubicacionRepository.softDelete({ id: id });
   }
 }
